@@ -18,7 +18,8 @@ TokenWise is a real-time intelligence tool for monitoring and analyzing wallet b
 ## Quickstart
 1. Clone the repo
 2. Set up `.env` in backend (see backend/README.md)
-3. Run `docker-compose up` to start backend and database
+3. Run `docker-compose up --build` 
 4. Access backend API at `http://localhost:4000`
+5. Access the app at `http://localhost:3000`
 
 See backend/README.md for backend details. 
