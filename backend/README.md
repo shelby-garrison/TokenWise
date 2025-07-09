@@ -1,16 +1,16 @@
 
 
 ````markdown
-# 🧠 TokenWise Backend
+#  TokenWise Backend
 
 A real-time analytics backend that monitors top holders and token activity on the Solana blockchain.
 
 ---
 
-## ⚙️ Setup
+##  Setup
 
 1. **Install dependencies**  
-   ```
+   
    npm install
 ````
 
@@ -39,7 +39,7 @@ A real-time analytics backend that monitors top holders and token activity on th
 
 ---
 
-## 🚀 Usage
+## Usage
 
 * **Start in development mode**
 
