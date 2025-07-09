@@ -11,10 +11,10 @@
    psql -U postgres -d tokenwise -f src/db/migrations/001_init.sql
    ```
 3. Configure `.env` (see `src/config/index.ts` for required variables):
-   - `DATABASE_URL`
-   - `SOLANA_RPC_URL`
-   - `TOKEN_MINT`
-   - `PORT`
+   DATABASE_URL=postgresql://username:password@localhost:5432/tokenwise
+   SOLANA_RPC_URL= https://api.mainnet-beta.solana.com OR https://rpc.helius.xyz/?api-key=YOUR_API_KEY(Offers a stable Solana RPC with higher rate limits)
+   TOKEN_MINT=9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump
+   PORT=4000
 
 ## Usage
 
