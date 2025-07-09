@@ -27,8 +27,17 @@ Run the `001_init.sql` script to initialize the database schema before starting 
 
 See backend/README.md for backend details. 
 
--To run the application locally with better performance, it’s recommended to follow the steps below instead of using Docker, as containerization is causing high CPU usage due to the large dataset being processed:
--Navigate to `\backend`:
--RUN `npm install` AND `npm run dev` (Installs dependencies and starts backend server on port 4000)
--Navigate to `\frontend`:
--RUN `npm install` AND `npm start` (Installs dependencies and starts frontend server on port 3000)
+- To run the application locally with better performance, it’s recommended to follow the steps below instead of using Docker, as containerization is causing high CPU usage due to the large dataset being processed:
+
+### Backend Setup
+- Navigate to `\backend`
+- Run: `npm install`  
+- Then run: `npm run dev`  
+  *(Installs dependencies and starts the backend server on port 4000)*
+
+### Frontend Setup
+- Navigate to `\frontend`
+- Run: `npm install`  
+- Then run: `npm start`  
+  *(Installs dependencies and starts the frontend server on port 3000)*
+
