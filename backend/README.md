@@ -1,5 +1,4 @@
 
----
 
 ````markdown
 # 🧠 TokenWise Backend
@@ -11,7 +10,7 @@ A real-time analytics backend that monitors top holders and token activity on th
 ## ⚙️ Setup
 
 1. **Install dependencies**  
-   ```sh
+   ```
    npm install
 ````
 
