@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: tokenwise
+    ports:
+      - '5432:5432'
+    volumes:
+      - db_data:/var/lib/postgresql/data
+  backend:
+    build: ./backend
+    command: npm run dev
+    environment:
+      DATABASE_URL: postgres://postgres:postgres@db:5432/tokenwise
+      SOLANA_RPC_URL: https://api.mainnet-beta.solana.com
+      TOKEN_MINT: 9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump
+      PORT: 4000
+    ports:
+      - '4000:4000'
+    depends_on:
+      - db
+    volumes:
+      - ./backend:/app
+volumes:
+  db_data: 
